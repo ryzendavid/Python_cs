@@ -437,6 +437,41 @@ for n, obj in Students.items():
    for m in obj:
       print(m + ":", obj[m]) # prints kvp
 
-#python if/else... 
+#python conditions
+
+a = 30
+b = 30
+c = 20
+
+if a < b:
+   print("a is not greater than b")
+elif b < a :
+   print("a is greater than b")
+else:
+   print("a is equal to b")
+
+#or 
+
+print("what is above") if a > b else print("what is below")
+
+if a > b or b > c :
+   print("There is an imbalance")
+
+#not 
+
+if not a > b:
+   print ("this is the opposite.. A is not greater than b")
+
+if a > 10:
+   print("a is greater")
+if a > 20:
+   print("a is also greater that this")
+
+#use the pass to avoid getting errors in empty if statements... 
+
+if a > b:
+   pass
+
+#python Match... 
 
 
