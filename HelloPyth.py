@@ -361,3 +361,82 @@ if "Owner" in dictExample:
  print("The car has an owner")
 
 #use .update to add items to dict
+
+# use .pop() to remove items
+
+dictExample.pop("Owner")
+
+print(dictExample)
+
+dictExample.update({"owner" : "Sarah Banks"})
+
+print(dictExample)
+
+#using .potitem() instead removes the last item instead
+
+
+
+print("separator")
+
+#can also use del... 
+del dictExample["owner"] 
+
+print(dictExample)
+
+#use .clear() to empty dict
+
+#looping dict.. 
+
+for x in dictExample:
+ print(x)
+
+print("values")
+for q in dictExample.values():
+   print(q)
+
+#to copy... 
+
+dictExampleCopy = dictExample.copy()
+
+print(dictExampleCopy)
+
+#nested dictionary... can have multiple kvp in a nested dict or to add multiple kvp to an existing dict... then create a new dict with multiple kvp and add this to the existing dict... 
+
+#Example 1 nested dict.. 
+
+Students = {
+   "student1" : {
+   "Name" : "Juan",
+   "Age" : 20,
+   "Major" : "Computer Science",
+   "OnCampus" : True
+},
+
+ "student2" : {
+    "Name" : "Sammy",
+    "Age" : "21",
+    "Major" : "Business", 
+    "OnCampus" : False, 
+    "address" : {
+       "city" : "Leceister", 
+       "postcode" : "LE2 5TN"
+    }
+ }
+
+}
+
+print(Students)
+
+print(Students["student2"]["address"])
+
+#looping nested dict... 
+
+for n, obj in Students.items():
+   print(n) # prints key
+
+   for m in obj:
+      print(m + ":", obj[m]) # prints kvp
+
+#python if/else... 
+
+
