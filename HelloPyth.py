@@ -232,9 +232,132 @@ def funcpen():
     print("pen is greater than yen then")
 
 funcpen()
-
 print("I'm back")
 
 #List comprehension
 
 fruits = ["apple", "mango", "kiwi", "banana"]
+newList = []
+
+for f in fruits:
+   if "a" in f:
+      newList.append(f)
+
+print(newList)
+
+#with list comprehension
+
+newListComp = [q for q in fruits if "n" in q]
+
+print(newListComp)
+
+print("back in trying new")
+
+#tuples....
+
+tupleExample = ("tupleOne", "TupleTwo", "TupleThree")
+
+tupleOneValue = ("TpleOneValueTwo",)
+print(tupleOneValue)
+print(tupleExample)
+
+#check if value in... 
+
+if "tuple5" in tupleExample:
+   print("Command Executed. Tuple1 is present in the example")
+else:
+   print("command not found: Error")
+
+
+listedTuple = list(tupleExample)
+
+listedTuple[1] = "changedTupleValue"
+listedTuple.append("AddedTupleValue")
+listedTuple.remove("AddedTupleValue")
+
+tupleExample = tuple(listedTuple)
+
+tupleExample += tupleOneValue
+ 
+
+print(tupleExample)
+
+#tuple unpacked... assigning values to variables... 
+
+#looping tuples... 
+
+for x in tupleExample:
+ print(x)
+
+for i in range(len(tupleExample)):
+   print(tupleExample[i])
+
+
+w = 0
+while w < len(tupleExample):
+   print(tupleExample[w]) 
+   w += 1
+
+
+countTup = tupleExample.count("tupleOne")
+
+print(countTup)
+
+#Python sets... 
+
+setExample = {"SetOne", "SetTwo", "SetThree", "SetFour"}
+setExample2 = {"SetNine"}
+for x in setExample:
+   print(x)
+
+#adding to sets.... 
+
+setExample.add("setFive")
+setExample.update(setExample2)
+setExample.update(tupleExample,ListExample)  #.update joins 2 or *more sets.. 
+setExample.remove("SetNine")  #can also add other arrays as well(lists, dict, tuple)   
+
+
+#use the set.clear to delete/clear the entire values of the set.. or use del set
+
+print(setExample)
+
+
+# frozenset is immutable. ensures that it cannot be changes.. 
+q = frozenset({"FrozenSet1", "FrozenSet2"})
+print(q)
+print(type(q))
+
+
+#Dictinaries... used to store data in Key value pairs (KVP)
+
+dictExample = {
+   "brand" : "Ford",
+   "model" : "Mustang",
+   "year" : 2018,
+   "Owner" : "John Young",
+   "colors" : ["red", "blue" , "green"] #values in dicts can be any data type, including lists... 
+}
+
+print(dictExample["brand"])
+
+m = dictExample.get("model")
+print(m)
+
+k = dictExample.keys()
+print(k)
+
+v = dictExample.values()
+print(v)
+
+dictExample["Owner"] = "Sarah Banks"
+
+
+print(type(dictExample))
+
+
+
+if "Owner" in dictExample: 
+ print("The car has an owner")
+
+#use .update to add items to dict
