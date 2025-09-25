@@ -475,3 +475,19 @@ if a > b:
 #python Match... 
 
 
+week = 33
+day = 6
+match day:
+   case 1:
+      print("Monday")
+   case 2:
+      print("Tuesday")
+   case 3:
+      print("Wednesday")
+   case 4:
+      print("Thursday")
+   case 6 | 7 if week == 32:
+      print("Weekend")
+   case _:
+      print("Your selected date does not exist... ")
+
