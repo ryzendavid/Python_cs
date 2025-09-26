@@ -491,3 +491,51 @@ match day:
    case _:
       print("Your selected date does not exist... ")
 
+#python while loop
+
+q = 10
+
+#use break to stop or continue to skip the current iteration and go to the next...
+while q<15:
+   q+=1
+   if q == 13:
+     continue
+   print(q)
+else:
+   print("q is no longer lower than 15")
+
+#for loop...
+
+cars = ["Volvo", "Mercedes", "Toyota", "Audi", "Renault"]
+
+for cars in cars:
+   if cars== "Toyota": #can also use break/continue in for loops as well just like while...
+      break
+   print(cars)
+
+#using range()... 
+
+for r in range(7):
+   if r == 6:
+      continue  #4 is the start of the sequence, 7 is the end(not including this number) 3 is the how much we increment by
+   print(r)
+else:
+   print("The number 4 has now been printed.... Please proceed")   #if loop is broken, else statement will not be executed... What happens if we continue? It works because we are still looping through rest for the numbers. and we reach the end of the loop
+
+
+
+fruits = ["apple", "banana", "cherry"]
+description = ["red", "big", "tasty"]
+
+for x in description:
+ for y in fruits:
+    print(x,y)
+
+
+for row in range(3):
+    for col in range(3):
+        print(f"Row {row}, Col {col}")
+
+for column in range(2):
+   for row in range(10):
+      print(column,row)
