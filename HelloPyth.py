@@ -539,3 +539,127 @@ for row in range(3):
 for column in range(2):
    for row in range(10):
       print(column,row)
+
+#functions... 
+
+def my_function():
+   print("This is a function")
+
+my_function()  #calling the function... 
+
+
+def user(fname):
+   print("Welcome Master " + fname)
+
+user("David")
+
+
+#fibonacci func
+
+def fib(n):
+ a,b = 0, 1
+ while a < n:
+    print(a, end= '')
+    a, b = b, a+b
+ print()
+
+fib(10)
+
+
+p = 2
+r = 2
+
+t = 33
+
+if p>r:
+   t = p
+elif r>p:
+   t = r
+else:
+   print("Values are the same")
+
+print (t)
+
+name = "David"
+yOR = "Less than 1"
+
+print (f"my name is {name} and I've got {yOR} years of experience in python" )
+
+#func contd... 
+
+def norm_name(fName, lName):
+   print (lName + " " +fName)
+   
+norm_name("Trisha" , "Jones")
+
+#Arbitrary arguments (*args).. for when you don't know how many arguments will be passed
+def ARB_name( *lName):
+   print (lName[0])
+ARB_name("Trisha" , "Jones")
+
+
+#keyword arguments... 
+
+def Kwrd_name(fName, lName):
+   print (lName + " " +fName)
+Kwrd_name(lName= "Trisha" , fName= "Jones")
+
+#Arbitrary keywrd args.  **Kwargs... same concept but with keyword args. For when you don't know how many ketword arguments will be passed when the function is called/executed...
+
+def Kid_name( **Name):
+   print ("Name is " + Name["lName"])
+Kid_name(fname= "Trisha" , lName = "Jones")
+
+
+
+
+
+#default parameter value... when a parameter is assigned a value, this is the default value... 
+
+def country_func(country = "Denmark"):
+   print("He is from "+ country )
+
+country_func("Sweden")
+
+#when calling rhe function... if you don't specify an argument.. the arg will be the default value... ex below... 
+
+country_func()
+
+def emptyFunc():
+   pass #use for empty func 
+
+
+
+#positional args... ensures that args used the position of the paramenters... 
+def greet_user(fName, lName, /):
+   print (f"Hello {fName} {lName}")
+
+greet_user("Stuart" , "Smith")
+
+#use *, Parameter to specify that func can only have keyword args... this is keyword only args
+
+def my_function(*, x):
+  print(x)
+
+my_function(x = 3)
+
+#can also combine both postional and keyword only
+
+def func_Only(a, b, /, *, c, d):
+   print(a + b + c + d)
+
+func_Only(2, 4, c = 3, d = 5)
+
+
+#function recursion... 
+
+def factorial(n):
+   if n == 0 or n == 1:
+      return 1
+   else:
+      return n*factorial(n-1)
+   print(n) 
+
+factorial(20)
+
+print(factorial (20))
