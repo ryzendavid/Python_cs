@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Python_sh
+=======
+# PythonLRH
+>>>>>>> 0615482 (Initial commit)
 
 
 
@@ -15,14 +19,22 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
+<<<<<<< HEAD
 git remote add origin https://csgitlab.reading.ac.uk/vd020497/python_sh.git
+=======
+git remote add origin https://csgitlab.reading.ac.uk/vd020497/pythonlrh.git
+>>>>>>> 0615482 (Initial commit)
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
+<<<<<<< HEAD
 - [ ] [Set up project integrations](https://csgitlab.reading.ac.uk/vd020497/python_sh/-/settings/integrations)
+=======
+- [ ] [Set up project integrations](https://csgitlab.reading.ac.uk/vd020497/pythonlrh/-/settings/integrations)
+>>>>>>> 0615482 (Initial commit)
 
 ## Collaborate with your team
 
